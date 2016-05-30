@@ -13,8 +13,9 @@ var app = app || {},
       'directives',
       'controllers',
      // 'views',
-      'services',
-      'ngOpenFB'
+   //   'services',
+      'ngOpenFB',
+      'ngStorage'
     ])
 
     app.factory('_', function () {

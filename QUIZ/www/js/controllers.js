@@ -37,7 +37,18 @@ angular.module('controllers', [])
     };
 })
 
-.controller('WelcomeCtrl', function ($scope, $ionicModal, $state, UserService, $ionicLoading, ngFB) {
+.controller('WelcomeCtrl', function ($scope,
+                                     $ionicModal,
+                                     $state,
+                                     $ionicLoading,
+                                     ngFB,
+                                     $localStorage,
+                                     $sessionStorage) {
+
+    if ($localStorage.userstr) {
+        $state.go('app.home');
+    }
+
     $scope.bgs = ["http://lorempixel.com/640/1136", "https://dl.dropboxusercontent.com/u/30873364/envato/ionFB/ion-fb-feed.gif"];
 
     // This method is executed when the user press the "Login with facebook" button
@@ -46,7 +57,6 @@ angular.module('controllers', [])
         ngFB.login({ scope: 'email,read_stream,publish_actions' }).then(
             function (response) {
                 if (response.status === 'connected') {
-                    //alert('Facebook login succeeded');
                     // $scope.closeLogin();
 
                     ngFB.api({
@@ -59,9 +69,11 @@ angular.module('controllers', [])
                                 UserName: user.name,
                                 EmailID: user.email,
                                 Location: user.user_location,
-                                ProfilePictureUrl: "http://graph.facebook.com/" + user.id + "/picture?width=200&height=200"
+                                ProfilePictureUrl: "http://graph.facebook.com/" + user.id + "/picture?width=200&height=200",
+                                OS: ''
                             };
-                            UserService.setUser(userdet);
+
+                            $localStorage.userstr = userdet;
                             $state.go('create-account');
                         },
                         function (error) {
@@ -111,9 +123,26 @@ angular.module('controllers', [])
     };
 })
 
-.controller('CreateAccountCtrl', function ($scope, $state, $http, $ionicPopup, UserService) {
+.controller('CreateAccountCtrl', function ($scope,
+                                           $state,
+                                           $http,
+                                           $ionicPopup,
+                                           $localStorage,
+                                           $sessionStorage) {
+    var user;
+    if ($localStorage.userstr) {
+        user = $localStorage.userstr;
+    }
+    else {
+        user = {
+            UserName: '',
+            EmailID: '',
+            Location: '',
+            ProfilePictureUrl: '',
+            OS: ''
+        }
+    }
 
-    var user = UserService.getUser();
     var DeviceType = (navigator.userAgent.match(/iPad/i)) == "iPad" ? "iPad" : (navigator.userAgent.match(/iPhone/i)) == "iPhone" ? "iPhone" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null";
 
     alert(DeviceType);
@@ -135,6 +164,7 @@ angular.module('controllers', [])
             data: angular.toJson($scope.user),
         };
         $http(req).then(function (response) {
+            $localStorage.userstr = $scope.user;
             $ionicPopup.alert({
                 title: 'Message',
                 template: 'Account created successfully'
