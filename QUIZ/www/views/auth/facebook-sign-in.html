@@ -1,0 +1,70 @@
+<ion-view class="welcome-view" cache-view="false">
+    <ion-content scroll="false">
+        <div multi-bg="['img/bg-img2.jpeg']" helper-class="facebook-welcome-bg">
+            <div class="top-content row">
+                <div class="app-copy col col-center">
+                    <h1 class="app-logo">logo</h1>
+                    <p class="app-tagline">
+                        Your tag line
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-content row">
+                <div class="col col-bottom">
+                    <a class="google-sign-in button-large button button-block" > <!--ng-click="trySilentLogin()"-->
+                        Sign In with Google
+                    </a>
+                    <a class="facebook-sign-in button-large button button-block" ng-click="facebookSignIn()">
+                        Sign In with Facebook
+                    </a>
+                    <a class="dont-have-facebook button button-clear button-block" ui-sref="dont-have-facebook">
+                        Don't have Facebook?
+                    </a>
+                    <section ng-include="'views/partials/legal-notice.html'"></section>
+                </div>
+            </div>
+        </div>
+        <!--<script type="text/javascript">
+            app.initialize();
+            function isAvailable() {
+                window.plugins.googleplus.isAvailable(function (avail) { alert(avail) });
+            }
+            function login() {
+                window.plugins.googleplus.login(
+                    {},
+                    function (obj) {
+                        document.querySelector("#image").src = obj.imageUrl;
+                        document.querySelector("#image").style.visibility = 'visible';
+                        document.querySelector("#feedback").innerHTML = "Hi, " + obj.displayName + ", " + obj.email;
+                    },
+                    function (msg) {
+                        document.querySelector("#feedback").innerHTML = "error: " + msg;
+                    }
+                );
+            }
+            
+            function logout() {
+                window.plugins.googleplus.logout(
+                    function (msg) {
+                        document.querySelector("#image").style.visibility = 'hidden';
+                        document.querySelector("#feedback").innerHTML = msg;
+                    }
+                );
+            }
+            function disconnect() {
+                window.plugins.googleplus.disconnect(
+                    function (msg) {
+                        document.querySelector("#image").style.visibility = 'hidden';
+                        document.querySelector("#feedback").innerHTML = msg;
+                    }
+                );
+            }
+            window.onerror = function (what, line, file) {
+                alert(what + '; ' + line + '; ' + file);
+            };
+            function handleOpenURL(url) {
+                document.querySelector("#feedback").innerHTML = "App was opened by URL: " + url;
+            }
+        </script>-->
+    </ion-content>
+</ion-view>

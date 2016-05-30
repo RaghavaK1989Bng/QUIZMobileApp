@@ -1,0 +1,84 @@
+﻿1>------ Build started: Project: QUIZ, Configuration: Debug Android ------
+1>  ------ Ensuring correct global installation of package from source package directory: C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\ApacheCordovaTools\packages\vs-tac
+1>  ------ Name from source package.json: vs-tac
+1>  ------ Version from source package.json: 1.0.42
+1>  ------ Package already installed globally at correct version.
+1>  ------ Cordova tools 6.0.0 already installed.
+1>  ------ Build Settings:
+1>  ------ Build Settings:
+1>  ------    platformConfigurationBldDir: F:\QUIZ\QUIZ\QUIZ\bld\Android\Debug
+1>  ------    platformConfigurationBinDir: F:\QUIZ\QUIZ\QUIZ\bin\Android\Debug
+1>  ------    buildCommand: build
+1>  ------    platform: Android
+1>  ------    cordovaPlatform: android
+1>  ------    configuration: Debug
+1>  ------    cordovaConfiguration: Debug
+1>  ------    projectName: QUIZ
+1>  ------    projectSourceDir: F:\QUIZ\QUIZ\QUIZ
+1>  ------    npmInstallDir: C:\Users\Raghava K\AppData\Roaming\npm
+1>  ------    buildTarget: AndroidEmulator
+1>  ------    language: en-US
+1>  ------ Platform android already exists
+1>  ------ Copying native files from F:\QUIZ\QUIZ\QUIZ\res\native\android to platforms\android
+1>  ------ Done copying native files to platforms\android
+1>  ------ Updating plugins
+1>  ------ Currently installed plugins: cordova-plugin-whitelist@1.2.2,phonegap-facebook-plugin@0.12.0
+1>  ------ Currently installed dependent plugins:
+1>  ------ Currently configured plugins:
+1>  ------ Preparing platform: android
+1>  Executing "before_prepare"  hook for all plugins.
+1>  Executing "before_build"  hook for all plugins.
+1>  Searching PlatformJson files for differences between project vs. platform installed plugins
+1>  No differences found between project and android platform. Continuing...
+1>  Generating config.xml from defaults for platform "android"
+1>  Found "merges" for android platform. Copying over existing "www" files.
+1>  Wrote out Android application name to "QUIZ"
+1>  Wrote out Android package name to "io.cordova.myappd8cd71"
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-hdpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-hdpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-ldpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-mdpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-xhdpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-ldpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-mdpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-hdpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-ldpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-mdpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-xhdpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-xhdpi\icon.png
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\icons\android\icon-36-ldpi.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-ldpi\icon.png
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\icons\android\icon-48-mdpi.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-mdpi\icon.png
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\icons\android\icon-72-hdpi.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-hdpi\icon.png
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\icons\android\icon-96-xhdpi.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-xhdpi\icon.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-hdpi\screen.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-hdpi\screen.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-ldpi\screen.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-mdpi\screen.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-xhdpi\screen.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-ldpi\screen.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-mdpi\screen.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-hdpi\screen.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-ldpi\screen.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-mdpi\screen.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-xhdpi\screen.png
+1>  Deleted F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-xhdpi\screen.png
+1>  splash screens: [{"src":"res/screens/android/screen-hdpi-landscape.png","density":"land-hdpi","platform":"android"},{"src":"res/screens/android/screen-ldpi-landscape.png","density":"land-ldpi","platform":"android"},{"src":"res/screens/android/screen-mdpi-landscape.png","density":"land-mdpi","platform":"android"},{"src":"res/screens/android/screen-xhdpi-landscape.png","density":"land-xhdpi","platform":"android"},{"src":"res/screens/android/screen-hdpi-portrait.png","density":"port-hdpi","platform":"android"},{"src":"res/screens/android/screen-ldpi-portrait.png","density":"port-ldpi","platform":"android"},{"src":"res/screens/android/screen-mdpi-portrait.png","density":"port-mdpi","platform":"android"},{"src":"res/screens/android/screen-xhdpi-portrait.png","density":"port-xhdpi","platform":"android"}]
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\screens\android\screen-hdpi-landscape.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-hdpi\screen.png
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\screens\android\screen-ldpi-landscape.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-ldpi\screen.png
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\screens\android\screen-mdpi-landscape.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-mdpi\screen.png
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\screens\android\screen-xhdpi-landscape.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-land-xhdpi\screen.png
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\screens\android\screen-hdpi-portrait.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-hdpi\screen.png
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\screens\android\screen-ldpi-portrait.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-ldpi\screen.png
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\screens\android\screen-mdpi-portrait.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-mdpi\screen.png
+1>  copying image from F:\QUIZ\QUIZ\QUIZ\res\screens\android\screen-xhdpi-portrait.png to F:\QUIZ\QUIZ\QUIZ\platforms\android\res\drawable-port-xhdpi\screen.png
+1>  updated project successfully
+1>  Executing "after_prepare"  hook for all plugins.
+1>  ------ Copied F:\QUIZ\QUIZ\QUIZ\bin\Android\Debug\VSBuildInfo.xml to platforms\android\assets\www\VSBuildInfo.xml
+1>  ------ Building platform: android
+1>  Debug
+1>  ------ Build configuration options: --debug
+1>  Executing "before_compile"  hook for all plugins.
+1>  ANDROID_HOME=C:\Program Files (x86)\Android\android-sdk
+1>  JAVA_HOME=C:\Program Files (x86)\Java\jdk1.7.0_55
+1>  Reading build config file: F:\QUIZ\QUIZ\QUIZ\build.json
+1>  Downloading http://services.gradle.org/distributions/gradle-2.2.1-all.zip
